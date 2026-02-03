@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	background-color: white;
+}
+.main{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+}	
+.logo img{
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.loginbox{
+	width: 600px;
+	height: 100vh;
+	background: white;
+	border-left: 2px #D3D3D3 solid;
+	top: 0px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-left: auto;
+	padding: 180px 40px 40px;
+}
+.login input{
+	width: 100%;
+  	height: 48px;
+  	padding: 0 14px;
+  	margin-bottom: 12px;
+  	border: 1px solid #dddfe2;
+  	border-radius: 15px;
+  	font-size: 16px;
+  	outline: none;
+}
+.login input:hover{
+	visibility: visible;
+	opacity: 100;
+}
+.login input:hover{
+	border-color: grey;
+}
+.login p{
+	margin-bottom: 20px;
+}
+.loginin{
+	width: 100%;
+  	height: 48px;
+  	padding: 0 14px;
+  	margin-bottom: 12px;
+  	border: 1px solid #dddfe2;
+  	border-radius: 30px;
+  	background-color: rgb(30,144,255, 0.5);
+  	color: white;
+  	font-size: 17px;
+}
+.loginin:hover{
+	visibility: visible;
+	opacity: 100;
+}
+.loginin:hover{
+	background-color: rgb(30,144,255);
+}
+.forget{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+  	height: 48px;
+  	padding: 0 14px;
+  	margin-bottom: 12px;
+  	border: 1px solid white;
+  	border-radius: 30px;
+  	background-color: white;
+  	color: white;
+  	font-size: 17px;
+}
+.forget:hover{
+	visibility: visible;
+	opacity: 100;
+}
+.forget:hover{
+	background-color: #F5F5F5;
+}
+.forget a{
+	text-decoration: none;
+	color: black;
+}
+.forget a:hover{
+	text-decoration: underline;
+}
+.forget{
+	margin-bottom: 50px;
+}
+.facebook{
+	width: 100%;
+  	height: 48px;
+  	padding:14px 160px;
+  	margin-bottom: 12px;
+  	border: 1px solid #dddfe2;
+  	border-radius: 30px;
+  	background-color: white;
+  	color: white;
+  	font-size: 15px;
+}
+.facebook a{
+	text-decoration: none;
+	color: black;
+}
+.facebook > a > p > img{
+	height: 12px;
+	margin-right: 8px;
+}
+.facebook:hover{
+	visibility: visible;
+	opacity: 100;
+}
+.facebook:hover{
+	background-color: #F5F5F5;
+}
+.newacc{
+	width: 100%;
+  	height: 48px;
+  	padding:14px 160px;
+  	margin-bottom: 12px;
+  	border: 1px solid #1E90FF;
+  	border-radius: 30px;
+  	background-color: white;
+  	color: #1E90FF;
+  	font-size: 15px;
+}
+.newacc:hover{
+	visibility: visible;
+	opacity: 100;
+}
+.newacc:hover{
+	background-color: #F5F5F5;
+}
+.meta{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	margin-top: 10px;
+	padding: 0;
+}
+.meta p{
+  	margin: 0;
+  	display: flex;
+ 	align-items: center;
+}
+.meta img{
+  	width: 24px;
+  	height: 24px;
+  	display: block;
+}
+.gradient{
+	background: -webkit-linear-gradient(red, blue);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.wordline{
+	margin-top: auto;
+	margin-left: auto;
+}
+.wordline h1{
+	text-align: center;
+}
+.wordline img{
+	height: 500px;
+}
+.footer{
+	width: 100%;
+	height: 90px;
+	background: white;
+	border-top: 2px #D3D3D3 solid;
+	padding: 20px 220px 0px;
+	font-size: 11px;
+}
+.footer a {
+    color: #8a8d91;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.fmeta{
+	color: #8a8d91;
+	margin-left: 426px;
+	margin-top: 20px;
+}
