@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+body {
+    background: white;
+}
+a{
+    text-decoration: none;
+}
+main{
+    background: white;
+    color: #24292f;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    text-align: center;
+}
+.tophead{
+	display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #fff; 
+}
+.top{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+}
+.dopinfo{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.sour{
+    width: 95px;
+}
+.search{
+    margin-left: 50%;      
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.loopa input{
+    width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+}
+.dash{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 8px 12px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+}
+.dash:hover{
+    color: grey;
+}
+h1.title {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+.ptitle {
+    max-width: 860px;
+    margin: 0 auto 24px;
+    color: #57606a;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hero div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #383B3F 0%, #212529 100%);
+    margin-bottom: 100px;
+}
+.free30{
+    color: white;
+    font-size: 18px;
+}
+.hero div:hover{
+    background: -webkit-linear-gradient(grey, #404040);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+}
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(27, 31, 36, 0.5);
+}
+.card h2{
+    margin-bottom: 15px;
+}
+.card p{
+    margin-bottom: 35px;
+}
+.num{
+    font-size: 50px;
+}
+.price{
+    margin-bottom: 15px;
+}
+.price sup{
+     font-size: 20px;
+     position: relative;
+     top: -0.5em;
+}
+.per{
+    font-size: 16px;
+    position: relative;
+    top: -1em;
+    color: #A0A0A0;
+    margin-left: 8px;
+}
+.price sub{
+    font-size: 25px;
+    position: relative;
+    top: -0.2em;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: solid 1px;
+    border-color: #E0E0E0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.button:hover{
+    border: solid 2px grey;
+}
+.buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.creatog{
+    color: black;
+    font-size: 16px;
+}
+.buttonc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: solid 1px;
+    border-color: #E0E0E0;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #383B3F 0%, #212529 100%);
+    margin-bottom: 30px;
+}
+.buttonc:hover{
+    background: -webkit-linear-gradient(grey, #404040);
+}
+.contteam{
+    color: white;
+}
+.buttons .whitebutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:#E0E0E0 solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    color: black;
+}
+.buttons .whitebutton:hover{
+    border: solid 2px grey;
+}
+.buttons .blackbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: grey 1px solid;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #383B3F 0%, #212529 100%);
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+.buttons .blackbutton:hover{
+    background: -webkit-linear-gradient(grey, #404040);
+}
+.details{
+    text-align: left;
+}
+.details details{
+    margin-bottom: 10px;
+}
+.details , details, .detail-body{
+    text-align: left;
+}
+.details summary{
+  list-style: none;              
+  cursor: pointer;
+  color: #24292f;
+  position: relative;
+  padding-left: 18px;           
+}
+.details summary::-webkit-details-marker{
+  display: none;            
+}
+.details summary::before{
+    content: "›";                  
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #57606a;
+    font-weight: 700;
+    transition: transform .2s ease;
+}
+.details details[open] summary::before{
+    transform: rotate(90deg);
+}
+.details .detail-body{
+    margin-top: 6px;
+    padding-left: 18px;            
+    color: #6e7781;
+    font-size: 12px;
+    line-height: 18px;
+}
+.addons {
+    margin-top: 64px;
+    text-align: center;
+}
+.addons h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.addgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 12px;
+}
+.addcard {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d0d7de;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(27, 31, 36, 0.1);
+}
+.addcard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(27, 31, 36, 0.2);
+}
+.addcard p{
+    margin-bottom: auto;
+}
+.addcard a{
+    color: black;
+}

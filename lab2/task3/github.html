@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pricing</title>
+    <link rel="stylesheet" href="github.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="tophead">
+	<div class="top">
+		<a href="https://github.com/home"><img src="data:image/png;base64,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" height="30px"></a>
+		<div class="dopinfo">
+			<div class="plat">Platform</div>
+			<div class="solu">Solutions</div>
+			<div class="reso">Resorces</div>
+			<div class="sour">Open Source</div>
+			<div class="enter">Enterprise</div>
+			<div class="pricing">Pricing</div>
+		</div>
+		<div class="search">
+			<div class="loopa"><input type="text" name="Search" placeholder="Search or jump to..."></div>
+            <div class="vertline"></div>
+			<div class="dash">Dashboard</div>
+		</div>
+	</div>
+    </header>
+    <main>
+        <header class="hero">
+            <h1 class="title">Try the Copilot-powered platform</h1>
+            <p class="ptitle">We get it, there's a lot you can do with GitHub. That's why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
+            <center>    
+            <div>  
+                <a class="free30" href="#">Start free for 30 days</a>
+            </div>
+            </center>
+        </header>
+        <section class="cards" aria-label="Pricing plans">
+          <div class="card">
+            <h2>Free</h2>
+            <p>The basics for individuals<br>and organizations</p>
+
+            <div class="price">
+              <sup>$</sup><span class="num">0</span><sub>USD</sub><span class="per">per user/month</span>
+            </div>
+
+            <div class="button">
+              <a class="creatog" href="#">Create a free organization</a>
+            </div>
+
+            <div class="details">
+              <details>
+                <summary>Unlimited public/private repositories</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Dependabot security and version updates</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>2,000 CI/CD minutes/month</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+              <details>
+                <summary>GitHub Copilot Access</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>GitHub Codespaces Access</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Team</h2>
+            <p>Advanced collaboration for<br>individuals and organizations</p>
+
+            <div class="price">
+              <sup>$</sup><span class="num">4</span><sub>USD</sub><span class="per">per user/month</span>
+            </div>
+
+            <div class="buttonc">
+              <a class="contteam" href="#">Continue with Team</a>
+            </div>
+
+            <div class="details">
+              <div class="included">← Everything included in Free, plus...</div>
+
+              <details>
+                <summary>Access to GitHub Codespaces</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Repository rules</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Multiple reviewers in pull requests</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Draft pull requests</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Code owners</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Required reviewers</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Pages and Wikis</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Environment deployment branches and secrets</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>3,000 CI/CD minutes/month</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>2GB of Packages storage</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Web-based support</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+              <details>
+                <summary>GitHub Secret Protection</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>GitHub Code Security</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Enterprise</h2>
+            <p>Security, compliance,<br>and flexible deployment</p>
+
+            <div class="price">
+              <sup>$</sup><span class="num">21</span><sub>USD</sub><span class="per">per user/month</span>
+            </div>
+
+            <div class="buttons">
+              <a class="blackbutton" href="#">Start a free trial</a>
+              <a class="whitebutton" href="#">Contact Sales</a>
+            </div>
+
+            <div class="details">
+              <div class="included">← Everything included in Team, plus...</div>
+
+              <details>
+                <summary>Data residency</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Enterprise Managed Users</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>User provisioning through SCIM</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Enterprise Account to centrally manage multiple organizations</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Environment protection rules</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Repository rules</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Audit Log API</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>SOC1, SOC2, type 2 reports annually</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>FedRAMP Tailored Authority to Operate (ATO)</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>SAML single sign-on</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>Advanced auditing</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>GitHub Connect</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>50,000 CI/CD minutes/month</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+
+              <details>
+                <summary>50GB of Packages storage</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+              <details>
+                <summary>Premium support</summary>
+                <div class="detail-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="addons">
+            <h2>Additional add-ons</h2>
+            <div class="addgrid">
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/11305/11305805.png" height="30px" alt="bot"></div>
+                    <h3>GitHub Copilot</h3>
+                    <p>Get started for free with up to 2,000 completions and 50 chat requests per month.</p>
+                    <a href="https://github.com/features/copilot#pricing">Compare plans ›</a>
+                </div>
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/14511/14511580.png" height="25px" alt="graph"></div>
+                    <h3>GitHub Models</h3>
+                    <p>Bring industry-leading AI into your workflow, securely and with full developer control.</p>
+                    <a href="https://github.com/features/models">Learn more ›</a>
+                </div>
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/16959/16959766.png" height="25px" alt="shield"></div>
+                    <h3>GitHub Advanced Security</h3>
+                    <p>Gain peace of mind with our security, privacy, and responsible AI policies.</p>
+                    <a href="https://github.com/security/plans">Learn more ›</a>
+                </div>
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/9514/9514972.png" height="25px" alt="server"></div>
+                    <h3>GitHub Codespaces</h3>
+                    <p>Starting at $0.18 per hour of compute and $0.07 per GB of storage.</p>
+                    <a href="https://github.com/features/codespaces">Learn more ›</a>
+                </div>
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/811/811476.png" height="25px" alt="chat"></div>
+                    <h3>Premium support</h3>
+                    <p>Get expert help for Enterprise Cloud and Enterprise—any hour your team needs it.</p>
+                    <a href="https://github.com/enterprise/premium-support">Learn more ›</a>
+                </div>
+                <div class="addcard">
+                    <div class="addicon"><img src="https://cdn-icons-png.flaticon.com/128/15099/15099747.png" height="25px" alt="storage"></div>
+                    <h3>Git LFS</h3>
+                    <p>$5 per month for 50 GB bandwidth and 50 GB of storage.</p>
+                    <a href="https://docs.github.com/ru/repositories/working-with-files/managing-large-files/about-git-large-file-storage">Learn more ›</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
