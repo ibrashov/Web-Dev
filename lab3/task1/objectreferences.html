@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            let user = {
+            name: "John",
+            sizes: {
+                height: 182,
+                width: 50
+            }
+            };
+            let clone = structuredClone(user);
+            alert( user.sizes === clone.sizes ); 
+            user.sizes.width = 60;    
+            alert(clone.sizes.width); 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            let user = {
+                age: 30
+            };
+            user.name = "John";
+            user.surname = "Smith";
+            user.name = "Pete";
+            delete user.name;
+            for(let key in user) {
+                alert(key);
+                alert(user[key]);
+            }
+        </script>
+    </body>
+</html>
