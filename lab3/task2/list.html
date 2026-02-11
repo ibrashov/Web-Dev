@@ -5,24 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>To-Do List</title>
   <link rel="stylesheet" href="list.css" />
+  <script src="list.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="brand">ToDo List</h1>
+  <header class="header">
+    <h1 class="listh1">ToDo List</h1>
   </header>
 
-  <main class="container">
-    <h2 class="title">ToDo List</h2>
+  <main class="main">
+    <h2 class="listh2">ToDo List</h2>
 
-    <form id="todoForm" class="todo-form" autocomplete="off">
-      <label class="sr-only" for="taskInput">New task</label>
-      <input id="taskInput" name="task" type="text" placeholder="New Task" maxlength="120" required/>
-      <button type="submit" id="addBtn">Add</button>
+    <form id="todo" class="todofrom" autocomplete="off">
+      <label class="label" for="input">New task</label>
+      <input id="input" name="task" type="text" placeholder="New Task" required/>
+      <button type="button" id="addbtn">Add</button>
     </form>
 
-    <ul id="todoList" class="todo-list" aria-label="To-do items"></ul>
+    <ul id="list" class="todolist" aria-label="To-do items"></ul>
   </main>
-
-  <script src="list.js"></script>
 </body>
 </html>
