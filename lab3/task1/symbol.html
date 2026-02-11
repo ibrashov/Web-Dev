@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let id = Symbol("id");
+            let user = {
+            [id]: 123
+            };
+
+            let clone = Object.assign({}, user);
+
+            alert( clone[id] );
+            let idd = Symbol("id");
+            let userr = {
+            name: "John",
+            age: 30,
+            [idd]: 123
+            };
+
+            for (let key in userr) alert(key); // name, age (no symbols)
+
+            // the direct access by the symbol works
+            alert( "Direct: " + userr[idd] );
+        </script>
+    </body>
+</html>
