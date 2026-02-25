@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Online Store — Lab 5</h1>
+
+  <div class="categories">
+    @for (c of categories; track c.id) {
+      <button
+        class="cat-btn"
+        [class.active]="c.id === selectedCategoryId"
+        (click)="selectCategory(c.id)"
+      >
+        {{ c.name }}
+      </button>
+    }
+  </div>
+
+  @if (selectedCategoryId === null) {
+    <p class="hint">Выбери категорию, чтобы увидеть товары</p>
+  } @else {
+    <app-product-list [products]="selectedProducts"></app-product-list>
+  }
+</div>

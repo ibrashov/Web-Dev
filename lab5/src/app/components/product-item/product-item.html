@@ -1,0 +1,31 @@
+<div class="card">
+  <img class="img" [src]="product().imgUrl" [alt]="product().name" />
+
+  <div class="body">
+    <h3 class="title">{{ product().name }}</h3>
+    <p class="desc">{{ product().description }}</p>
+
+    <div class="meta">
+      <span>⭐ {{ product().rating }}</span>
+      <span class="price">
+        @if (product().price > 0) {
+          {{ product().price }} ₸
+        } @else {
+          Price on Kaspi
+        }
+      </span>
+    </div>
+
+    <a class="link" [href]="product().link" target="_blank">Open on Kaspi</a>
+
+    <div class="actions">
+      <button class="btn" (click)="like()">❤ {{ product().likes }}</button>
+      <button class="btn danger" (click)="remove()">Delete</button>
+    </div>
+
+    <div class="actions">
+      <button class="btn ghost" (click)="shareWhatsApp()">WhatsApp</button>
+      <button class="btn ghost" (click)="shareTelegram()">Telegram</button>
+    </div>
+  </div>
+</div>
