@@ -1,6 +1,5 @@
-import { Component, effect, signal, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { Product } from '../../models/product.model';
 import { ProductItemComponent } from '../../components/product-item/product-item';
 
@@ -12,19 +11,11 @@ import { ProductItemComponent } from '../../components/product-item/product-item
   styleUrl: './product-list.css',
 })
 export class ProductListComponent {
-  // ✅ AppComponent-тен келеді
   products = input.required<Product[]>();
 
-  // ✅ delete жасасақ, тек осы категория ішінде өшеді
-  visible = signal<Product[]>([]);
-
-  constructor() {
-    effect(() => {
-      this.visible.set(this.products());
-    });
-  }
-
-  onDelete(productId: number) {
-    this.visible.update(list => list.filter(p => p.id !== productId));
+  deleteFromList(productId: number) {
+    const arr = this.products();
+    const idx = arr.findIndex(p => p.id === productId);
+    if (idx !== -1) arr.splice(idx, 1);
   }
 }

@@ -1,12 +1,9 @@
-@if (visible().length === 0) {
+@if (products().length === 0) {
   <p class="empty">No products in this category</p>
 } @else {
   <div class="grid">
-    @for (p of visible(); track p.id) {
-      <app-product-item
-        [product]="p"
-        (delete)="onDelete($event)"
-      ></app-product-item>
+    @for (p of products(); track p.id) {
+      <app-product-item [product]="p" (delete)="deleteFromList($event)"></app-product-item>
     }
   </div>
 }

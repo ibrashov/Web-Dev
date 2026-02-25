@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ProductService } from './services/product.service';
 import { Category } from './models/category.model';
 import { Product } from './models/product.model';
-
+import { ProductService } from './services/product.service';
 import { ProductListComponent } from './pages/product-list/product-list';
 
 @Component({
@@ -14,20 +12,21 @@ import { ProductListComponent } from './pages/product-list/product-list';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
+export class AppComponent {
   categories: Category[] = [];
   selectedCategoryId: number | null = null;
+
+  // IMPORTANT: храним именно "текущий список", который будем отдавать в ProductList
+  selectedProducts: Product[] = [];
 
   constructor(private productService: ProductService) {
     this.categories = this.productService.getCategories();
   }
 
-  selectCategory(id: number) {
-    this.selectedCategoryId = id;
-  }
+  selectCategory(categoryId: number) {
+    this.selectedCategoryId = categoryId;
 
-  get selectedProducts(): Product[] {
-    if (this.selectedCategoryId === null) return [];
-    return this.productService.getProductsByCategory(this.selectedCategoryId);
+    // делаем копию массива, чтобы удаление работало только внутри выбранной категории
+    this.selectedProducts = this.productService.getProductsByCategory(categoryId).map(p => ({ ...p }));
   }
 }

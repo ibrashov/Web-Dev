@@ -1,31 +1,24 @@
 <div class="card">
-  <img class="img" [src]="product().imgUrl" [alt]="product().name" />
+  <img class="img" [src]="product().image" [alt]="product().name" />
 
   <div class="body">
     <h3 class="title">{{ product().name }}</h3>
     <p class="desc">{{ product().description }}</p>
 
     <div class="meta">
-      <span>⭐ {{ product().rating }}</span>
-      <span class="price">
-        @if (product().price > 0) {
-          {{ product().price }} ₸
-        } @else {
-          Price on Kaspi
-        }
-      </span>
-    </div>
-
-    <a class="link" [href]="product().link" target="_blank">Open on Kaspi</a>
-
-    <div class="actions">
-      <button class="btn" (click)="like()">❤ {{ product().likes }}</button>
-      <button class="btn danger" (click)="remove()">Delete</button>
+      <span class="price">{{ product().price }} ₸</span>
+      <span class="rating">⭐ {{ product().rating }}</span>
+      <span class="likes">❤ {{ product().likes }}</span>
     </div>
 
     <div class="actions">
-      <button class="btn ghost" (click)="shareWhatsApp()">WhatsApp</button>
-      <button class="btn ghost" (click)="shareTelegram()">Telegram</button>
+      <a class="btn" [href]="product().link" target="_blank">Open</a>
+
+      <button class="btn like" (click)="like()">Like</button>
+      <button class="btn del" (click)="onDelete()">Delete</button>
+
+      <button class="btn" (click)="shareWhatsApp()">WhatsApp</button>
+      <button class="btn" (click)="shareTelegram()">Telegram</button>
     </div>
   </div>
 </div>

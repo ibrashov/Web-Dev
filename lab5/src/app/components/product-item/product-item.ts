@@ -17,19 +17,17 @@ export class ProductItemComponent {
     this.product().likes++;
   }
 
-  remove() {
+  onDelete() {
     this.delete.emit(this.product().id);
-    console.log('DELETE', this.product().id);
   }
 
   shareWhatsApp() {
-    const text = encodeURIComponent(`${this.product().name} — ${this.product().link}`);
-    window.open(`https://wa.me/?text=${text}`, '_blank');
+    const url = encodeURIComponent(this.product().link);
+    window.open(`https://wa.me/?text=${url}`, '_blank');
   }
 
   shareTelegram() {
-    const text = encodeURIComponent(this.product().name);
     const url = encodeURIComponent(this.product().link);
-    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+    window.open(`https://t.me/share/url?url=${url}`, '_blank');
   }
 }
