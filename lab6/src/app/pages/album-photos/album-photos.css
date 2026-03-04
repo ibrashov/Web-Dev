@@ -1,0 +1,40 @@
+.state { margin: 10px 0; }
+.error { color: #b00020; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.15s;
+}
+.card:hover { transform: translateY(-2px); }
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.back {
+  margin-top: 16px;
+  padding: 9px 12px;
+  border: 1px solid #222;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}

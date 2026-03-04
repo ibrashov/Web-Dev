@@ -1,0 +1,21 @@
+<div class="state" *ngIf="loading">Loading album...</div>
+
+<div class="state error" *ngIf="!loading && error">
+  {{ error }}
+</div>
+
+<div *ngIf="!loading && album">
+  <h1>Album #{{ album.id }}</h1>
+  <p><b>UserId:</b> {{ album.userId }}</p>
+
+  <label class="label">Title</label>
+  <input class="input" [(ngModel)]="editedTitle" />
+
+  <div class="actions">
+    <button (click)="save()" [disabled]="saving">Save</button>
+
+    <a class="btn" [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+
+    <button (click)="backToAlbums()">Back</button>
+  </div>
+</div>
