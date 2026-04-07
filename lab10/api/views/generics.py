@@ -2,10 +2,8 @@ from django.shortcuts import get_object_or_404
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
 from api.models import Category, Product
 from api.serializers import CategorySerializer, ProductSerializer
-"""
 class ProductListAPIView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -33,4 +31,3 @@ class CategoryProductsAPIView(APIView):
         products = category.products.all()
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
-"""
